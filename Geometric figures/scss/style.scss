@@ -1,0 +1,124 @@
+@import "_reset";
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+
+    &__block {
+        padding: 25px 0px 25px 50px;
+    }
+
+    &__square {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__circle {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__oval {
+        width: 230px;
+        height: 150px;
+        background-color: green;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__rectangle {
+        width: 300px;
+        height: 150px;
+        background-color: green;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid green;
+
+        &:hover {
+            border-bottom: 200px solid red;
+        }
+    }
+
+    &__triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 200px solid green;
+
+        &:hover {
+            border-top: 200px solid red;
+        }
+    }
+
+    &__triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right: 200px solid green;
+
+        &:hover {
+            border-right: 200px solid red;
+        }
+    }
+
+    &__triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-left: 200px solid green;
+
+        &:hover {
+            border-left: 200px solid red;
+        }
+    }
+
+    &__parallelogram {
+        width: 300px;
+        height: 150px;
+        background-color: green;
+        transform: skew(15grad);
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__trapezoid {
+        width: 200px;
+        border-top: 150px solid green;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+
+        &:hover {
+            border-top: 150px solid red;
+        }
+    }
+}
